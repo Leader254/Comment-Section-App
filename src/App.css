@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+.app {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.messages {
+  margin-bottom: 20px;
+}
+
+.message {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-family: 'Rubik', sans-serif;
+  /* margin: auto 20%; */
+}
+
+.message-content {
+  flex-grow: 1;
+}
+
+.message-content p {
+  margin: 0;
+}
+
+.message-content .reply {
+  font-style: italic;
+  color: #888;
+}
+
+.message-content .time {
+  font-size: 12px;
+  color: #888;
+}
+
+.message-actions button {
+  margin-right: 5px;
+}
+
+.input-area {
+  display: flex;
+  margin-top: 20px;
+}
+
+.input-area textarea {
+  flex-grow: 1;
+  resize: none;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.input-area button {
+  padding: 5px 10px;
+  background-color: darkblue;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+
+}
+.chat-app{
+  border: 2px solid black;
+  padding: 1rem;
+  border-radius: 5px;
+}
+.root{
+  background: #ccc;
+}
