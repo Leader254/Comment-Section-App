@@ -1,21 +1,19 @@
-[
-    {
-      "id": "1",
-      "content": "Impressive! Though it seems the drag feature could be improved. But overall it looks incredible. You've nailed the design and the responsiveness at various breakpoints works really well",
-      "timestamp": "1 month ago",
-      "reply": ""
+[{
+        "id": "1",
+        "content": "Impressive! Though it seems the drag feature could be improved. But overall it looks incredible. You've nailed the design and the responsiveness at various breakpoints works really well",
+        "timestamp": "1 month ago",
+        "reply": ""
     },
     {
-      "id": "2",
-      "content": "Woah, your project looks awesome! How long have you been coding for? I'm still new, but think I want to dive into React as well soon. Perhaps you can give me an insight on where I can learn React? Thanks!",
-      "timestamp": "2 Week ago",
-      "reply": ""
+        "id": "2",
+        "content": "Woah , your project looks awesome! How long have you been coding for? I'm still new, but think I want to dive into React as well soon. Perhaps you can give me an insight on where I can learn React? Thanks!",
+        "timestamp": "2 Week ago",
+        "reply": ""
     },
     {
-      "id": "3",
-      "content": "I'm doing great!",
-      "timestamp": "2023-05-24 09:10:00",
-      "reply": "That's good to hear!"
+        "id": "3",
+        "content": "I'm doing great!",
+        "timestamp": "2023-05-24 09:10:00",
+        "reply": "That's good to hear!"
     }
-  ]
-  
+]
