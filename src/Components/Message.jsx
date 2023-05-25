@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+/* eslint-disable react/prop-types */
+import { useState } from 'react';
 
 const Message = ({ message, onReply, onDelete, onEdit }) => {
   const [reply, setReply] = useState('');
@@ -9,7 +10,18 @@ const Message = ({ message, onReply, onDelete, onEdit }) => {
   const [replyingToReply, setReplyingToReply] = useState('');
 
   const handleReply = () => {
-    onReply(message.id, reply);
+    const updatedMessage = {
+      ...message,
+      replies: [
+        ...(message.replies || []),
+        {
+          id: Math.random().toString(),
+          content: reply,
+        },
+      ],
+    };
+
+    onReply(updatedMessage);
     setReply('');
     setReplyingToReply('');
   };

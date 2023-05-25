@@ -160,3 +160,15 @@
 .delete-btn {
   background-color: hsl(358, 79%, 66%);
 }
+.replied-message {
+  margin-left: 20px;
+}
+
+.reply {
+  font-weight: bold;
+}
+
+.nested-reply {
+  margin-left: 20px;
+  font-style: italic;
+}
