@@ -1,174 +1,174 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
-
 .app {
-  max-width: 750px;
-  margin: 0 auto;
-  padding: 50px;
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 50px;
 }
 
 .messages {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .message {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-radius: 5px;
-  margin-bottom: 10px;
-  font-family: 'Rubik', sans-serif;
-  background: #fff;
-  padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-family: 'Rubik', sans-serif;
+    background: #fff;
+    padding: 30px;
 }
 
 .message-content {
-  flex-grow: 1;
+    flex-grow: 1;
 }
 
 .message-content p {
-  margin: 0;
+    margin: 0;
 }
 
 .message-content .reply {
-  font-style: italic;
-  color: #888;
+    font-style: italic;
+    color: #888;
 }
 
 .message-content .nested-reply {
-  margin-left: 20px;
-  font-style: italic;
-  color: #888;
+    margin-left: 20px;
+    font-style: italic;
+    color: #888;
 }
 
 .message-content .time {
-  font-size: 12px;
-  color: #888;
+    font-size: 12px;
+    color: #888;
 }
 
 .message-actions button {
-  margin-right: 5px;
+    margin-right: 5px;
 }
 
 .input-area {
-  display: flex;
-  margin-top: 20px;
+    display: flex;
+    margin-top: 20px;
 }
 
 .input-area textarea {
-  flex-grow: 1;
-  resize: none;
-  padding: 5px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+    flex-grow: 1;
+    resize: none;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 .input-area button {
-  padding: 5px 10px;
-  background-color: darkblue;
-  color: #fff;
-  border: none;
-  cursor: pointer;
+    padding: 5px 10px;
+    background-color: darkblue;
+    color: #fff;
+    border: none;
+    cursor: pointer;
 }
 
 .chat-app {
-  padding: 1rem;
-  border-radius: 5px;
+    padding: 1rem;
+    border-radius: 5px;
 }
 
 .root {
-  background: #ccc;
+    background: #ccc;
 }
 
 .delete-confirmation-wrapper {
-  align-items: center;
-  background: rgba(0, 0, 0, 0.3);
-  display: flex;
-  height: 100vh;
-  justify-content: center;
-  left: 0;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 100;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
 }
 
 .delete-confirmation-wrapper .delete-container {
-  background: #fff;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  padding: 20px;
-  width: 90%;
-  max-width: 400px;
+    background: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;
 }
 
 .delete-container .title {
-  font-weight: 700;
-  font-size: 1.3rem;
-  color: hsl(212, 24%, 26%);
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: hsl(212, 24%, 26%);
 }
 
 .confirmation-message {
-  color: hsl(211, 10%, 45%);
+    color: hsl(211, 10%, 45%);
 }
 
 .delete-container .btn-container {
-  display: flex;
-  gap: 0.7rem;
-  justify-content: space-around;
-  padding: 0 40px 0 40px;
+    display: flex;
+    gap: 0.7rem;
+    justify-content: space-around;
+    padding: 0 40px 0 40px;
 }
 
 .update-comment__send-btn {
-  color: white;
-  background-color: hsl(238, 40%, 52%);
-  font-weight: 700;
-  padding: 1rem 2rem;
-  border-radius: 10px;
-  align-self: flex-end;
+    color: white;
+    background-color: hsl(238, 40%, 52%);
+    font-weight: 700;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    align-self: flex-end;
 }
 
 .edit-container form {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  gap: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 0.7rem;
 }
 
 .edit-container form textarea#reply-text {
-  min-height: 100px;
-  border-radius: 5px;
+    min-height: 100px;
+    border-radius: 5px;
 }
 
 .btn-container button {
-  color: white;
-  border: 0;
-  padding: 1rem;
-  border-radius: 10px;
-  text-transform: uppercase;
-  line-height: inherit;
-  letter-spacing: inherit;
-  font-weight: 500;
-  cursor: pointer;
+    color: white;
+    border: 0;
+    padding: 1rem;
+    border-radius: 10px;
+    text-transform: uppercase;
+    line-height: inherit;
+    letter-spacing: inherit;
+    font-weight: 500;
+    cursor: pointer;
 }
 
 .cancel-btn {
-  background-color: hsl(211, 10%, 45%);
+    background-color: hsl(211, 10%, 45%);
 }
 
 .delete-btn {
-  background-color: hsl(358, 79%, 66%);
+    background-color: hsl(358, 79%, 66%);
 }
+
 .replied-message {
-  margin-left: 20px;
+    margin-left: 20px;
 }
 
 .reply {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 .nested-reply {
-  margin-left: 20px;
-  font-style: italic;
+    margin-left: 20px;
+    font-style: italic;
 }
