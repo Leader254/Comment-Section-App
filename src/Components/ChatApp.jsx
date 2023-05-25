@@ -22,12 +22,12 @@ const ChatApp = () => {
     setMessages([...messages, newMessage]);
   };
 
-  const handleReply = (id, reply) => {
-    const updatedMessages = messages.map((message) =>
-      message.id === id ? { ...message, reply } : message
-    );
-    setMessages(updatedMessages);
-  };
+  // const handleReply = (id, reply) => {
+  //   const updatedMessages = messages.map((message) =>
+  //     message.id === id ? { ...message, reply } : message
+  //   );
+  //   setMessages(updatedMessages);
+  // };
 
   const handleDelete = (id) => {
     const updatedMessages = messages.filter((message) => message.id !== id);
@@ -48,7 +48,7 @@ const ChatApp = () => {
           <Message
             key={message.id}
             message={message}
-            onReply={handleReply}
+            // onReply={handleReply}
             onDelete={handleDelete}
             onEdit={handleEdit}
           />

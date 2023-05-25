@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import { useState } from 'react';
+import julio from '../images/avatars/image-juliusomo.webp'
 
 const MessageForm = ({ onSend }) => {
   const [inputValue, setInputValue] = useState('');
@@ -12,7 +13,9 @@ const MessageForm = ({ onSend }) => {
   };
 
   return (
-    <div className="input-area">
+
+    <div  className="input-area">
+      <img style={{height:"35px",marginRight:"6px"}} src={julio} alt="" />
       <textarea
         value={inputValue}
         onChange={(e) => setInputValue(e.target.value)}
