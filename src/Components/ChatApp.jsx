@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import Message from './Message';
 import MessageForm from './MessageForm';
 import data from '../data.json';

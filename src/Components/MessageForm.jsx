@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 const MessageForm = ({ onSend }) => {
   const [inputValue, setInputValue] = useState('');
