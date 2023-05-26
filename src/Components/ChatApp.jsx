@@ -11,31 +11,37 @@ const ChatApp = () => {
     setMessages(data);
   }, []);
 
-  const handleSend = (content) => {
-    const newMessage = {
-      id: Math.random().toString(),
-      content,
-      timestamp: new Date().toLocaleString(),
-      reply: '',
-    };
-
-    setMessages([...messages, newMessage]);
+  const handleSend = (content, reply) => {
+  const newMessage = {
+    id: Math.random().toString(),
+    content,
+    timestamp: new Date().toLocaleString(),
+    reply,
   };
 
-  // const handleReply = (id, reply) => {
-  //   const updatedMessages = messages.map((message) =>
-  //     message.id === id ? { ...message, reply } : message
-  //   );
-  //   setMessages(updatedMessages);
-  // };
+  setMessages([...messages, newMessage]);
+};
+
+
+  const handleReply = (updatedMessage) => {
+    const updatedMessages = messages.map((message) =>
+      message.id === updatedMessage.id ? updatedMessage : message
+    );
+    setMessages(updatedMessages);
+  };
+  
 
   const handleDelete = (id) => {
+    // filter method to create a new array called updatedMessages that includes all 
+    // messages except the one with the matching id. 
     const updatedMessages = messages.filter((message) => message.id !== id);
     setMessages(updatedMessages);
   };
 
   const handleEdit = (id, content) => {
     const updatedMessages = messages.map((message) =>
+    // if statement to check if the message id is present
+    // if yes, spread the message and set content else just retain the message
       message.id === id ? { ...message, content } : message
     );
     setMessages(updatedMessages);
@@ -48,7 +54,7 @@ const ChatApp = () => {
           <Message
             key={message.id}
             message={message}
-            // onReply={handleReply}
+            onReply={handleReply}
             onDelete={handleDelete}
             onEdit={handleEdit}
           />

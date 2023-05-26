@@ -29,7 +29,6 @@
 .message-content {
   flex-grow: 1;
 }
-
 .message-content p {
   margin: 0;
 }
@@ -39,7 +38,26 @@
 }
 .message-content .reply {
   font-style: italic;
-  color: #888;
+  color: #000000;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.timestamp{
+  font-weight: 100;
+  font-size: 12px;
+  color: white;
+  display: flex;
+  padding-top: 20px;
+  flex-direction: row-reverse;
+}
+.reply-container{
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 20px;
+  margin-left: 80px;
 }
 
 .message-content .nested-reply {
@@ -96,7 +114,7 @@
 }
 
 .root {
-  background: #ccc;
+  background: #b0adad;
 }
 
 .delete-confirmation-wrapper {
@@ -195,8 +213,12 @@
 svg{
   margin-right: 7px;
 }
+.btns:hover{
+  cursor: pointer;
+  /* color: rgba(70, 41, 41, 0.5); */
+}
 .replied-message {
-  margin-left: 20px;
+  margin-left: 80px;
 }
 .reply-btn {
   color: #5357b6;
@@ -205,12 +227,11 @@ svg{
 }
 
 .reply {
-  background-color: #5357b6;
+  background-color: #999999;
 }
 
 .nested-reply {
   margin-left: 20px;
-  font-style: italic;
 }
 .main2 {
   display: flex;
